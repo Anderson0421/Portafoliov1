@@ -1,7 +1,6 @@
-<div style="background:black";>
 <h1 align="center" id="title">Portafolio web</h1>
 
-<p id="description">Portafolio web con Astro y Tailwindcs</p>
+<p id="description">Portafolio web with Astro and Tailwindcs</p>
 
 <h2>🚀 Deploy 🚀</h2>
 
@@ -13,7 +12,7 @@
 
   
   
-<h2>💻 Built with</h2>
+<h2>💻 Technologies </h2>
 
 Technologies used in the project:
 
@@ -24,4 +23,3 @@ Technologies used in the project:
 <h2>🛡️ License:</h2>
 
 This project is licensed under the AnderDev
-</div>
