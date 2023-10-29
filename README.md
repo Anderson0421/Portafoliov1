@@ -3,7 +3,7 @@
 
 <p id="description">Portafolio web con Astro y Tailwindcs</p>
 
-<h2>🚀 Demo</h2>
+<h2>🚀 Deploy 🚀</h2>
 
 [https://portafolio-ander-dev.vercel.app/](https://portafolio-ander-dev.vercel.app/)
 
@@ -23,5 +23,5 @@ Technologies used in the project:
 
 <h2>🛡️ License:</h2>
 
-This project is licensed under the
+This project is licensed under the AnderDev
 </div>
