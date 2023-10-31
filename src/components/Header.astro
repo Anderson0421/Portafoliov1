@@ -2,44 +2,46 @@
 import HeaderBottom from "./HeaderBottom.astro";
 
 ---
-<div class="bg-gray-950  bg-opacity-95 mx-20 max-md:mx-0">
-    <div class="mx-5 py-5 text-blue-100 font-semibold flex justify-between ">
-        <div class="hidden sm:flex items-center gap-x-5">
-            <a href="#" class="flex items-center">
-                <p class="font-bold">Ander</p><img src="icons/dev-to-svgrepo-com.svg" class="w-9 text-white ml-1" alt="">
-            </a>
-            <div class="space-x-4">
-                <a href="#">Inicio</a>
-                <a href="#">Proyectos</a>
-                <a href="#">Experiencia</a>
-                <a href="#">Certificados</a>
+<div class="fixed w-full h-full">
+    <div class="bg-gray-950 fi bg-opacity-95 max-md:mx-0">
+        <div class="mx-5 py-5 text-blue-100 font-semibold flex justify-between ">
+            <div class="hidden sm:flex items-center gap-x-5">
+                <a href="#" class="flex items-center">
+                    <p class="font-bold">Ander</p><img src="icons/dev-to-svgrepo-com.svg" class="w-9 text-white ml-1" alt="">
+                </a>
+                <div class="space-x-4">
+                    <a href="#">Inicio</a>
+                    <a href="#">Proyectos</a>
+                    <a href="#">Experiencia</a>
+                    <a href="#">Certificados</a>
+                </div>
             </div>
-        </div>
-
-        <div class="flex items-center gap-x-5">
-            <a href="https://github.com/Anderson0421" target="_blank" class="flex items-center">
-                <img src="icons/github-142-svgrepo-com.svg" class="w-8 text-white ml-1" alt="">
-            </a>
-            <a href="https://www.linkedin.com/in/anderson-marcelo-herrera-2a898a250/"target="_blank"  class="flex items-center">
-                <img src="icons/linkedin-svgrepo-com.svg" class="w-8 text-white ml-1" alt="">
-            </a>
-        </div>
-
-        <!-- Botón de menú para pantallas pequeñas -->
-        <div class="sm:hidden">
-            <button class="text-white" id="show_menu">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6L18 18"></path>                </svg>
-            </button>
-
-            <!-- Menú desplegable para pantallas pequeñas -->
-            <div class="hidden">
-                <a href="#" class="block py-2 text-white">Inicio</a>
-                <a href="#" class="block py-2 text-white">Proyectos</a>
-                <a href="#" class="block py-2 text-white">Experiencia</a>
-                <a href="#" class="block py-2 text-white">Certificados</a>
+    
+            <div class="flex items-center gap-x-5">
+                <a href="https://github.com/Anderson0421" target="_blank" class="flex items-center">
+                    <img src="icons/github-142-svgrepo-com.svg" class="w-8 text-white ml-1" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/anderson-marcelo-herrera-2a898a250/"target="_blank"  class="flex items-center">
+                    <img src="icons/linkedin-svgrepo-com.svg" class="w-8 text-white ml-1" alt="">
+                </a>
             </div>
-
+    
+            <!-- Botón de menú para pantallas pequeñas -->
+            <div class="sm:hidden">
+                <button class="text-white" id="show_menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6L18 18"></path>                </svg>
+                </button>
+    
+                <!-- Menú desplegable para pantallas pequeñas -->
+                <div class="hidden">
+                    <a href="#" class="block py-2 text-white">Inicio</a>
+                    <a href="#" class="block py-2 text-white">Proyectos</a>
+                    <a href="#" class="block py-2 text-white">Experiencia</a>
+                    <a href="#" class="block py-2 text-white">Certificados</a>
+                </div>
+    
+            </div>
         </div>
     </div>
 </div>
