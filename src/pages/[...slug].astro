@@ -1,0 +1,65 @@
+---
+export const prerender = true
+export async function getStaticPaths() {
+    const pages = [
+        {
+        slug: "Projects/Ecommerce",
+        title: "Ecommerce",
+        text: "Proyecto web realizado con Django y MySQL Ecomerce de productos tecnlogicos",
+        content:"Este proyecto me ayudó a entender muchos conceptos como de Django y MySQL , debido a las implementaciones nombradas como pasarelas de pago , carrito de compras, etc",
+        funcionalidades : {
+            func1 : 'Integracion de pasarela de pago con Paypal',
+            func2 : 'Integracion de alertas con SweetAlert2',
+            func3 : 'Integracion de carrito de compras',
+        }
+        },
+        {
+        slug: "Projects/Plataforma",
+        title: "Productos de Astro",
+        text: "Tenemos muchos productos para ti",
+        content:"",
+        funcionalidades : {
+            func1 : 'Integracion',
+        }
+        },
+        {
+        slug: "Projects/Dashboard",
+        title: "El libro definitivo de Astro",
+        text: "Si quieres aprender sobre Astro, debes leer este libro.",
+        content:"",
+        funcionalidades : {
+            func1 : 'valor1',
+        }
+        },
+    ];
+    return pages.map(({ slug, title, text,content,funcionalidades }) => {
+        return {
+        params: { slug },
+        props: { title, text,content,funcionalidades },
+        };
+    });
+    }
+    const { title, text, content , funcionalidades } = Astro.props;
+---
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Proyect</title>
+</head>
+<body style="background-color: #13151a;">
+        <div class="mx-20 py-10 w-3/4">
+            <div>
+                <h1 class="text-white font-extrabold text-5xl mb-5">🌟 {title}</h1>
+                <div class="w-1/2 flex flex-col gap-3">
+                    <p class="text-gray-200 text-xl">{text}</p>
+                    <p class="text-gray-300">✅ {funcionalidades['func1']}</p>
+                    <p class="text-gray-300">✅ {funcionalidades['func2']}</p>
+                    <p class="text-gray-300">✅ {funcionalidades['func3']}</p>
+                    <p class="text-white text-lg">{content}</p>
+                </div>
+            </div>
+        </div>
+</html>
+</body>
+</html>
