@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../layouts/Hero.astro";
 import Skills from "../layouts/Skills.astro";
 import Proyects from "../layouts/Proyects.astro";
+import { ViewTransitions } from 'astro:transitions';
+
 ---
 
 <html lang="en">
@@ -11,6 +13,7 @@ import Proyects from "../layouts/Proyects.astro";
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Portafolio web AnderDev@2024">
 	<title>Portafolio</title>
+	<ViewTransitions />
 </head>
 <body style="background-color: #13151a;">
 	<Layout title="Welcome to my Portafolio">
