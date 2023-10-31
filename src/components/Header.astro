@@ -28,17 +28,17 @@ import HeaderBottom from "./HeaderBottom.astro";
     
             <!-- Botón de menú para pantallas pequeñas -->
             <div class="sm:hidden">
-                <button class="text-white" id="show_menu">
+                <button class="text-white" id="show_menu" aria-label="Boton_Cerrar">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6L18 18"></path>                </svg>
                 </button>
     
                 <!-- Menú desplegable para pantallas pequeñas -->
                 <div class="hidden">
-                    <a href="#" class="block py-2 text-white">Inicio</a>
-                    <a href="#" class="block py-2 text-white">Proyectos</a>
-                    <a href="#" class="block py-2 text-white">Experiencia</a>
-                    <a href="#" class="block py-2 text-white">Certificados</a>
+                    <a href="#" class="block py-2 text-white" aria-label="links">Inicio</a>
+                    <a href="#" class="block py-2 text-white" aria-label="links">Proyectos</a>
+                    <a href="#" class="block py-2 text-white" aria-label="links">Experiencia</a>
+                    <a href="#" class="block py-2 text-white" aria-label="links">Certificados</a>
                 </div>
     
             </div>
