@@ -7,6 +7,7 @@ export default {
 				'sans': "'Work Sans', sans-serif",
 				'cascadia':"CascadiaCode",
 			},
+			
 	
 		},
 	},
