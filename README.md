@@ -8,9 +8,9 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="public/screen1.webp" alt="project-screenshot" width="780" height="350/">
+<img src="public/screen1.webp" alt="project-screenshot" width="780" height="380/">
 <br>
-<img src="public/screen2.webp" alt="project-screenshot" width="780" height="350/">
+<img src="public/screen2.webp" alt="project-screenshot" width="780" height="380/">
 
   
   
