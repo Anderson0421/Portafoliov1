@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Portafolio web</h1>
 
-<p id="description">Portafolio web with Astro and Tailwindcs</p>
+<p id="description">Portafolio web with Astro and Tailwindcss</p>
 
 <h2>🚀 Deploy 🚀</h2>
 
@@ -8,7 +8,9 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://astro.build/assets/press/astro-logo-light-gradient.svg" alt="project-screenshot" width="400" height="400/">
+<img src="public/screen1.webp" alt="project-screenshot" width="400" height="400/">
+
+<img src="public/screen2.webp" alt="project-screenshot" width="400" height="400/">
 
   
   
