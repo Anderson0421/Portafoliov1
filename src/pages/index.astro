@@ -6,6 +6,7 @@ import Proyects from "../layouts/Proyects.astro";
 import { ViewTransitions } from 'astro:transitions';
 import Experiencia from "../layouts/Experiencia.astro";
 import Certificados from "../layouts/Certificados.astro";
+import Footer from "../components/Footer.astro";
 
 ---
 
@@ -24,8 +25,14 @@ import Certificados from "../layouts/Certificados.astro";
 		<Proyects></Proyects>
 		<Experiencia></Experiencia>
 		<Certificados></Certificados>
+		<Footer></Footer>
 	</Layout>
 	
 	<script src="script.js" type="module"></script>
 </body>
 </html>
+<style is:global>
+	html{
+		scroll-behavior: smooth;
+	}
+</style>
