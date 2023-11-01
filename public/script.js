@@ -48,7 +48,6 @@ ScrollReveal().reveal('.caja2', {
     distance:0,     
     scale: 0.5,   
     opacity: 0,  
-        reset:true,
 
 });
 const btnshow = document.getElementById('show_menu');
