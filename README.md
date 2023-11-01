@@ -9,7 +9,7 @@
 <h2>Project Screenshots:</h2>
 
 <img src="public/screen1.webp" alt="project-screenshot" width="700" height="400/">
-
+<br>
 <img src="public/screen2.webp" alt="project-screenshot" width="700" height="400/">
 
   
