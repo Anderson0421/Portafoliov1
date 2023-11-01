@@ -1,15 +1,14 @@
 ---
 import { ViewTransitions } from "astro:transitions";
 import Card from "../components/Card.astro";
-
 ---
 <ViewTransitions/>
-<section class="mb-32">
-    <div class="flex justify-center mb-10">
-        <h1 class="text-white text-4xl font-bold">Lista de <span class="bg-gradient-to-l from-blue-500  to-blue-600 text-transparent bg-clip-text ">proyectos</span></h1>
+<section class="mb-24">
+    <div class="flex justify-center mb-10  max-[350px]:pl-5">
+        <h1 class="text-white text-4xl font-extrabold tracking-wider">Lista de <span class="bg-gradient-to-l from-blue-500  to-blue-600 text-transparent bg-clip-text ">proyectos</span></h1>
     </div>
-    <div class="text-white flex flex-wrap  gap-5 justify-center lg:mx-10">
-        <Card  deploy="https://github.com/Anderson0421" repos="https://github.com/Anderson0421" title="🌟 Plataforma de proyectos" descripcion="Red social web de proyectos para unir la comunidad y que consigan mas experiencia!">
+    <div class="text-white flex flex-wrap  gap-5 justify-evenly lg:mx-10">
+        <Card  deploy="https://github.com/Anderson0421" repos="https://github.com/Anderson0421" title="🌟 DevCollab " descripcion=" Plataforma de proyectos, red social web de proyectos para unir la comunidad y que consigan mas experiencia!">
             <div class="bg-gray-800 rounded-lg px-3 py-3 font-bold group"><img class="w-8 group-hover:scale-110 group-hover:duration-300 transition-all" src="icons/laravel-svgrepo-com.svg" alt=""></div>
             <div class="bg-gray-800 rounded-lg px-3 py-3 font-bold group"><img class="w-9 group-hover:scale-110 group-hover:duration-300 transition-all" src="icons/mysql-logo-svgrepo-com.svg" alt=""></div>
             <div class="bg-gray-800 rounded-lg px-3 py-3 font-bold group"><img class="w-9 group-hover:scale-110 group-hover:duration-300 transition-all" src="icons/tailwind-svgrepo-com.svg" alt=""></div>
@@ -34,10 +33,5 @@ import Card from "../components/Card.astro";
             <div class="bg-gray-800 rounded-lg px-3 py-3 font-bold group"><img class="w-8 group-hover:scale-110 group-hover:duration-300 transition-all" src="icons/html-5-svgrepo-com.svg" alt=""></div>
             <div class="bg-gray-800 rounded-lg px-3 py-3 font-bold group"><img class="w-8 group-hover:scale-110 group-hover:duration-300 transition-all" src="icons/css-3-svgrepo-com.svg" alt=""></div>
         </Card>
-
-        
-        
     </div>
-    
 </section>
-
