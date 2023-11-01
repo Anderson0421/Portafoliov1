@@ -21,3 +21,37 @@ btnshow.addEventListener('click', function () {
         svg.classList.remove('icon-change');
     }, 200);
 });
+
+
+function filterItems(category) {
+    const items = document.querySelectorAll('.item');
+    
+    items.forEach(item => {
+        const itemCategory = item.getAttribute('data-category');
+        
+        if (itemCategory === category) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+function showAll() {
+    const items = document.querySelectorAll('.item');
+    
+    items.forEach(item => {
+        item.style.display = 'block';
+    });
+}
+
+document.getElementById("filtrarBackend").addEventListener("click", function() {
+    filterItems("backend");
+});
+
+document.getElementById("filtrarFrontend").addEventListener("click", function() {
+    filterItems("frontend");
+});
+
+document.getElementById("showAll").addEventListener("click", function() {
+    showAll();
+});
