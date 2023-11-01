@@ -1,6 +1,5 @@
 ---
 import HeaderBottom from "./HeaderBottom.astro";
-
 ---
 <div class="fixed w-full  z-10">
     <div class=" bg-gray-950 fi bg-opacity-95 max-md:mx-0">
@@ -32,7 +31,6 @@ import HeaderBottom from "./HeaderBottom.astro";
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6L18 18"></path>                </svg>
                 </button>
-    
                 <!-- Menú desplegable para pantallas pequeñas -->
                 <div class="hidden">
                     <a href="#" class="block py-2 text-white" aria-label="links">Inicio</a>
@@ -40,13 +38,11 @@ import HeaderBottom from "./HeaderBottom.astro";
                     <a href="#" class="block py-2 text-white" aria-label="links">Experiencia</a>
                     <a href="#" class="block py-2 text-white" aria-label="links">Certificados</a>
                 </div>
-    
             </div>
         </div>
     </div>
 </div>
 <HeaderBottom></HeaderBottom>
-
 <style is:global>
 .menu-appear {
     animation-name: menu-appear-animation;
@@ -95,5 +91,4 @@ import HeaderBottom from "./HeaderBottom.astro";
         transform: scale(1);
     }
 }
-
 </style>
