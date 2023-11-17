@@ -1,0 +1,48 @@
+---
+    interface Props{
+        title : string;
+        descrip:string;
+        version:string;
+        github:string;
+        link:string;
+    }
+
+    const { title,descrip,version,github,link } = Astro.props
+---
+    <div id="proyect" class="mx-12 md:pt-16 max-sm:pt-10 md:mx-24 max-sm:mx-6 max-sm:py-5 md:py-20 flex flex-col md:flex-row items-center">
+        <div class="flex flex-col w-2/4 max-md:w-full">
+            <h1 class="text-2xl text-white font-bold max-md:text-start">{title}</h1>
+            <p class="text-lg text-gray-300 max-md:text-base">{descrip}</p>
+            <p class="text-lg text-red-300 mt-2 max-md:text-base">Version {version}</p>
+            <div class="flex gap-4 items-center mt-5">
+                <a href={github}>
+                    <img class="w-9 max-md:w-7" src="icons/github-142-svgrepo-com.svg" alt="github">
+                </a>
+                <a href={link}>
+                    <img class="w-10 max-md:w-7" src="icons/medal.png" alt="icons">    
+                </a>
+            </div>
+        </div>
+        <div class="flex flex-col w-2/4 text-black ml-10 max-md:mt-10 max-md:w-full max-md:ml-0 pb-20">
+            <div class="swiper w-4/5  mySwiper text-black shrink-0">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg-white"><img src="projects/img1.jpg" alt="img1"></div>
+                    <div class="swiper-slide bg-white"><img src="projects/img2.jpg" alt="igm1"></div>
+                    <div class="swiper-slide bg-white"><img src="projects/img3.jpg" alt="igm1"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                </div>
+        </div>
+    </div>
+
+<script>
+    import Swiper from 'swiper';
+    import 'swiper/css';
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+    });
+</script>

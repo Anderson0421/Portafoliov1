@@ -27,7 +27,7 @@ ScrollReveal().reveal('.section', {
     origin: 'top', 
     distance: '0', 
     duration: 500, 
-        reset:true,
+
 
 });
 ScrollReveal().reveal('.caja1', {
@@ -37,7 +37,6 @@ ScrollReveal().reveal('.caja1', {
     origin: 'bottom',     
     scale: 0.1,   
     opacity: 0,  
-    reset:true,
 
 });
 ScrollReveal().reveal('.caja2', {
@@ -103,3 +102,5 @@ document.getElementById("filtrarFrontend").addEventListener("click", function() 
 document.getElementById("showAll").addEventListener("click", function() {
     showAll();
 });
+
+
