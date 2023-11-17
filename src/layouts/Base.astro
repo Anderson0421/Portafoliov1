@@ -5,34 +5,36 @@
         version:string;
         github:string;
         link:string;
+        img:string;
+        img2:string;
+        img3:string;
+        video:string;
     }
 
-    const { title,descrip,version,github,link } = Astro.props
+    const { title,descrip,version,github,link,img,img2,img3,video } = Astro.props
 ---
     <div id="proyect" class="mx-12 md:pt-16 items-center max-sm:pt-10 md:mx-24 max-sm:mx-6 max-sm:py-5 md:py-20 flex flex-col md:flex-row">
         <div class="flex flex-col w-2/4 max-md:w-full">
-            <h1 class="text-2xl text-white font-bold max-md:text-start">{title}</h1>
-            <p class="text-lg text-gray-300 max-md:text-base">{descrip}</p>
+            <h1 class="text-3xl text-white font-bold max-md:text-start mb-1 ">{title}</h1>
+            <p class="text-base text-gray-300 max-md:text-base">{descrip}</p>
             <p class="text-lg text-red-300 mt-2 max-md:text-base">Version {version}</p>
             <div class="flex gap-4 items-center mt-5">
                 <a href={github}>
-                    <img class="w-9 max-md:w-7" src="icons/github-142-svgrepo-com.svg" alt="github">
+                    <img class="w-8 max-md:w-7" src="icons/github-142-svgrepo-com.svg" alt="github">
                 </a>
                 <a href={link}>
-                    <img class="w-10 max-md:w-7" src="icons/medal.png" alt="icons">    
+                    <img class="w-9 max-md:w-7" src="icons/link-alt-svgrepo-com.svg" alt="icons">    
                 </a>
             </div>
         </div>
-        <div class="flex flex-col w-2/4 text-black ml-10 max-md:mt-10 max-md:w-full max-md:ml-0 pb-20">
-            <div class="swiper w-4/5  mySwiper text-black shrink-0">
+        <div class="flex flex-col w-2/4 text-black ml-10 max-md:mt-10 max-md:w-full max-md:ml-0 pb-5">
+            <div class="swiper w-full h-max  mySwiper text-black shrink-0 max-md:w-full">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide bg-white"><img src="projects/img1.jpg" alt="img1"></div>
-                    <div class="swiper-slide bg-white"><img src="projects/img2.jpg" alt="igm1"></div>
-                    <div class="swiper-slide bg-white"><img src="projects/img3.jpg" alt="igm1"></div>
-                    <video class="swiper-slide" src="projects/VID_20231116_211039.mp4" controls></video>
+                    <div class="swiper-slide bg-white"><img src={img} alt="img1"></div>
+                    <div class="swiper-slide bg-white"><img src={img2} alt="igm1"></div>
+                    <div class="swiper-slide  bg-white"><img src={img3} alt="igm1"></div>
+                    <video class="swiper-slide" src={video} controls></video>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
                 </div>
         </div>
     </div>
