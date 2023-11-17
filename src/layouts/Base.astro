@@ -9,7 +9,7 @@
 
     const { title,descrip,version,github,link } = Astro.props
 ---
-    <div id="proyect" class="mx-12 md:pt-16 max-sm:pt-10 md:mx-24 max-sm:mx-6 max-sm:py-5 md:py-20 flex flex-col md:flex-row items-center">
+    <div id="proyect" class="mx-12 md:pt-16 items-center max-sm:pt-10 md:mx-24 max-sm:mx-6 max-sm:py-5 md:py-20 flex flex-col md:flex-row">
         <div class="flex flex-col w-2/4 max-md:w-full">
             <h1 class="text-2xl text-white font-bold max-md:text-start">{title}</h1>
             <p class="text-lg text-gray-300 max-md:text-base">{descrip}</p>
@@ -44,6 +44,8 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
         },
-        autoplay: true,
+        autoplay: {
+            delay: 1000,
+        },
     });
 </script>
